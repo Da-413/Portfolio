@@ -1,0 +1,77 @@
+{
+  "compilerOptions": {
+    // 컴파일 대상
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable", 
+      "es6",
+      "ES2020"
+    ],
+    
+    // 모듈 시스템
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    
+    // JSX 설정
+    "jsx": "preserve",
+    
+    // 타입 체크 엄격도
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    
+    // 성능 최적화
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // Next.js 설정
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    
+    // 경로 별칭 설정 (@ 경로)
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/data/*": ["./src/data/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/config/*": ["./src/config/*"]
+    }
+  },
+  
+  // 포함할 파일들
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+, "next.config.js"  ],
+  
+  // 제외할 파일들
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist"
+  ]
+}
