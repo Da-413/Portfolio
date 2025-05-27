@@ -9,7 +9,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onNavigate, isSc
   return (
     <div className="w-full h-full bg-gradient-to-br from-red-900 via-cyan-900 to-slate-900 flex items-center justify-center relative">
       <div className="text-center text-white z-10 max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">Let's Work Together</h2>
+        <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">{`Let's Work Together`}</h2>
         <p className="text-lg mb-8 opacity-90">
           새로운 도전과 협업 기회를 기다리고 있습니다. <br />
           데이터 사이언스 프로젝트나 MLOps 구축에 대해 이야기해보세요.

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Github, ExternalLink, Calendar, Tag } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
@@ -250,18 +251,18 @@ const ProjectDetailPage: NextPage<ProjectDetailPageProps> = ({ project }) => {
                   이 프로젝트에 대해 더 자세히 알고 싶거나 유사한 프로젝트를 함께 진행하고 싶으시다면 연락해주세요!
                 </p>
                 <div className="flex justify-center space-x-4">
-                  <a
+                  <Link
                     href="/#contact"
                     className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
                   >
                     Contact Me
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/#projects"
                     className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-colors"
                   >
                     More Projects
-                  </a>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

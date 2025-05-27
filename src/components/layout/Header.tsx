@@ -25,7 +25,11 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <motion.header
-      className="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-md border-b border-white/10"
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b border-white/10 ${
+        isScrolled 
+          ? 'bg-black/80 backdrop-blur-lg' 
+          : 'bg-black/30 backdrop-blur-md'
+      }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
