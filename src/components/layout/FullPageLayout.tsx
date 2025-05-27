@@ -10,7 +10,7 @@ interface FullPageLayoutProps {
 export const FullPageLayout: React.FC<FullPageLayoutProps> = ({ 
   children, 
   currentSection = 0, 
-  onSectionChange 
+  onSectionChange
 }) => {
   return (
     <div className="fixed inset-0 overflow-hidden bg-dark-bg text-dark-text">

@@ -34,18 +34,19 @@ export const Header: React.FC<HeaderProps> = ({
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <motion.div
-            className="text-xl font-bold"
+          <motion.button
+            className="text-lg font-bold text-white"
             whileHover={{ scale: 1.05 }}
+            onClick={() => onSectionChange?.(0)}
           >
-            <span className="text-white">AI Portfolio</span>
-          </motion.div>
+            AI Portfolio
+          </motion.button>
 
           {/* Desktop Navigation */}
-          <div className="flex space-x-6">
+          <div className="hidden md:flex">
             <Navigation 
               items={navigationItems} 
               currentSection={currentSection}

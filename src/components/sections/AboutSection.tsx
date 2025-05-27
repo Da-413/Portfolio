@@ -8,23 +8,23 @@ interface AboutSectionProps {
 export const AboutSection: React.FC<AboutSectionProps> = () => {
   return (
     <div className="w-full h-full bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900 flex items-center justify-center relative">
-      <div className="text-center text-white z-10 max-w-4xl mx-auto px-8">
-        <h2 className="text-5xl lg:text-6xl font-bold mb-8 gradient-text">About Me</h2>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="text-center text-white z-10 max-w-3xl mx-auto px-6">
+        <h2 className="text-4xl lg:text-5xl font-bold mb-8 gradient-text">About Me</h2>
+        <div className="grid md:grid-cols-2 gap-6 items-center">
           <div className="space-y-6">
-            <p className="text-lg leading-relaxed opacity-90">
+            <p className="text-base leading-relaxed opacity-90">
               데이터 사이언스와 MLOps 분야에서 5년간의 경험을 보유하고 있습니다. 
               복잡한 데이터 문제를 해결하고 머신러닝 모델을 프로덕션 환경에 배포하는 것을 전문으로 합니다.
             </p>
-            <p className="text-lg leading-relaxed opacity-90">
-              Python, TensorFlow, Docker, Kubernetes를 활용하여 확장 가능한 ML 파이프라인을 구축하고 있습니다.
+            <p className="text-base leading-relaxed opacity-90">
+              Python, TensorFlow, Docker, AWS를 활용하여 확장 가능한 ML 파이프라인을 구축하고 있습니다.
             </p>
-            <p className="text-lg leading-relaxed opacity-90">
+            <p className="text-base leading-relaxed opacity-90">
               데이터 기반 의사결정과 비즈니스 임팩트 창출에 열정을 가지고 있으며, 
               지속적인 학습과 기술 발전을 추구합니다.
             </p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-3">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:bg-white/15 transition-colors">
               <h3 className="font-semibold mb-2 text-blue-300">Experience</h3>
               <p className="text-sm opacity-80">5+ years in Data Science & MLOps</p>
@@ -41,7 +41,7 @@ export const AboutSection: React.FC<AboutSectionProps> = () => {
         </div>
 
         {/* 핵심 가치 */}
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
+        <div className="mt-10 grid md:grid-cols-3 gap-4">
           {[
             {
               icon: '🎯',
