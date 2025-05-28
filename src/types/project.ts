@@ -41,4 +41,4 @@ export interface ProjectLinks {
 
 export type ProjectStatus = 'completed' | 'in-progress' | 'planned';
 export type ProjectCategory = 'machine-learning' | 'deep-learning' | 'computer-vision' | 'nlp' | 'data-science';
-export type TechnologyCategory = 'framework' | 'library' | 'language' | 'tool' | 'cloud' | 'database';
+export type TechnologyCategory = 'framework' | 'library' | 'language' | 'tool' | 'cloud' | 'database' | 'technique';
