@@ -36,6 +36,7 @@ export const TechStack: React.FC<TechStackProps> = ({
     tool: '도구',
     cloud: '클라우드',
     database: '데이터베이스',
+    technique: '기술',
   };
 
   // 색상 매핑
